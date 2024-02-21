@@ -5,21 +5,9 @@ export default class LightMode {
         this.activeClass = 'ativo'
     }
 
-    bodyStyleChange() {
-        document.body.style.background = '#f0f8ff'
-    }
-
     onLightMode() {
-        if (this.button.classList.contains(this.activeClass)) {
-            console.log('removeu')
-            console.log(this.button)
-            this.button.classList.remove(this.activeClass)
-            document.body.style.background = '#111111'
-            
-        } else {
-        this.button.classList.add(this.activeClass)
-        this.bodyStyleChange()
-        }
+        this.button.classList.toggle(this.activeClass)
+        document.body.classList.toggle(this.activeClass)
     }
 
     addLightModeEvent() {
