@@ -17,18 +17,27 @@ body.ativo {
     color: black;
 }
 
+body.ativo #menu {
+    background: #f8f8f8;
+}
+
+body.ativo #menu ul li a {
+    color: black;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr minmax(300px, 800px) 1fr;
-    grid-template-rows: 100vh 500px 500px 500px 500px 500px;
+    grid-template-rows: 100vh 500px 500px 800px 500px 500px;
     /* grid-template-areas: "." "center" "." ; */
 }
+
 
 #toggle {
     position: relative;
     display: block;
-    width: 320px;
-    height: 160px;
+    width: 100px;
+    height: 50px;
     cursor: pointer;
     border-radius: 160px;
     background-color: #222;
@@ -49,8 +58,8 @@ body.ativo {
     position: absolute;
     top: 0;
     left: 0;
-    width: 160px;
-    height: 160px;
+    width: 50px;
+    height: 50px;
     background: linear-gradient(to bottom, #444, #222);
     border-radius: 50%;
     transform: scale(0.9);
@@ -62,7 +71,7 @@ body.ativo {
 }
 
 #toggle.ativo .indicator {
-    left: 160px;
+    left: 50px;
     background: linear-gradient(to bottom, #eaeaea, #f9f9f9);
     box-shadow: inset 0 8px 20px rgba(0,0,0,0.1),  
                 inset 0 4px 4px rgba(255,255,255,1),  
@@ -70,13 +79,16 @@ body.ativo {
 }
 
 #menu {
-    background-color: #111111;
+    display: grid;
+    grid-template-columns: 30% 70%;
     width: 100vw;
     position: fixed;
     z-index: 1;
     padding-top: 30px;
     padding-bottom: 26px;
-    padding-left: 400px;
+    padding-left: 150px;
+    background: #111111;
+    transition: background 0.5s;
 }
 
 #menu ul {
@@ -114,4 +126,5 @@ body.ativo {
 
 .flex-sobre {
     display: flex;
+    gap: 50px;
 }
