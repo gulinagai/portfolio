@@ -15,7 +15,6 @@ export default class LightMode {
     }
 
     init(){
-        console.log(this.button)
         if (this.button) {
             this.addLightModeEvent()
         }

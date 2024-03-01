@@ -15,49 +15,83 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Sobre mim</a></li>
-                <li><a href="#">Experiência</a></li>
                 <li><a href="#">Projetos</a></li>
-                <li><a href="#">Habilidades</a></li>
+                <li><a href="#">Tecnologias</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
         </nav>
-        <div class="grid-container">
-        <section class="grid-section container-inicio">
+        <section class="container-inicio">
             <div class="inicio">
-            <h1>Seja Bem-vindo ao meu portfólio.</h1>
-            <h2>Eu sou Gustavo Nagai,</h2>
-            <h1>Desenvolvedor Front-End</h1>
-            <p></p>
-
-            <span>scroll down</span>
+                <h1>Seja Bem-vindo ao meu portfólio.</h1>
+                <h2>Eu sou <strong>Gustavo Nagai</strong>,</h2>
+                <h1>Desenvolvedor Front-End</h1>
+                <ul class="flex-links">
+                    <li><a href="https://github.com/gulinagai" target="_blank"><img src="imagens/icones/github.svg" alt=""></a></li>
+                    <li><a href="https://www.linkedin.com/in/gustavo-nagai/" target="_blank"><img src="imagens/icones/linkedin.png" alt=""></a></li>
+                </ul>
             </div>
         </section>
-        <section class="grid-section">
-            <h1>Sobre mim</h1>
-            <div class="flex-sobre">
-            <img src="imagens/fotoportfolio.jpg" alt="">
-            <p>Seja bem vindo ao meu portfólio!<br>Me chamo Gustavo Nagai e sou entusiasta e apaixonado pela área de programação, especialmente por desevolvimento Front-End.<br>Sou formado em Farmácia e Bioquímica pela UNOESTE e estou em busca de migrar de carreira para a área de TI. 
-            Todos os dias tento estudar algo novo afim de aprimorar meus conhecimentos na área, e a cada dia me sinto mais disposto a aprender! </p>
-            </div>
+        <section class="secao" id="secao-sobre">
+            <div class="topico"> SOBRE </div>
+                <div class="container-sobre box">
+                    <div><img src="imagens/fotoportfolio.jpg" alt=""></div>
+                    <div>
+                        <p><u>Seja bem vindo ao meu portfólio!</u></p><br>
+                        <p>Me chamo Gustavo Nagai e sou entusiasta e apaixonado pela área de programação, especialmente por desevolvimento Front-End.</p><p>Sou formado em Farmácia e Bioquímica pela UNOESTE e estou em busca de migrar de carreira para a área de TI.
+                        Estudo todos os dias para aprimorar meus conhecimentos na área, e a cada dia me sinto mais disposto a aprender! </p>
+                    </div>
+                </div>
         </section>
-        <section class="grid-section">
-            <h1>Experiência</h1>
-            <h2>Maio 2019 - Maio 2022</h2>
-            <h2>Atendente de Balcão - UBS Santo Anastácio</h2>
+        <section class="secao" id="secao-projeto">
+            <div class="topico"> PROJETOS </div>
+                <h1>Projetos</h1>
+                        <div class="projeto box">
+                            <img src="imagens/projetos/projeto-1.png" alt="">
+                            <h2>Projeto Black Clover</h2>
+                            <p>Projeto de site Fandom. Projeto Autoral feito utilizando as tecnologias <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>. O site apresenta interatividades ao usuário como Theme Switching, TabNav de imagens, modal e um Quizz. </p>
+                            <ul>
+                                <li><a href="https://gulinagai.github.io/projeto-catalogo/" target="_blank">Deploy</a></li>
+                                <li><a href="https://github.com/gulinagai/projeto-catalogo" target="_blank">Repositório</a></li>
+                            </ul>
+                        </div>
+                    <div id="projeto-esq-container">
+                        <div class="projeto projeto-esq box">
+                            <img src="imagens/projetos/projeto-2.png" alt="">
+                            <h2>Projeto Animais do Polo Norte</h2>
+                            <p>Projeto desenvolvido a partir do curso de JavaScript ES6+ da Origamid. Apresenta diversas funcionalidades desenvolvidas por JavaScript como accordion List, debounce, dropdown menu, fetch, menu Mobile, modal, tooltip, slide, animações ao scroll, scroll suave, entre outros.<br> Tecnologias: <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>. </p>
+                            <ul>
+                                <li><a href="https://gulinagai.github.io/animais-do-polo-norte/" target="_blank">Deploy</a></li>
+                                <li><a href="https://github.com/gulinagai/animais-do-polo-norte" target="_blank">Repositório</a></li>
+                            </ul>
+                        </div>
+                    </div>
         </section>
-        <section class="grid-section">
-            <h1>Projetos</h1>
+        <section class="secao" id="secao-icones">
+            <div class="topico"> TECNOLOGIAS </div>
+                <h1>Tecnologias</h1>
+                <div class="icones box">
+                    <img id="html-img"src="imagens/icones/html.png" alt="">
+                    <span id="html-text">HTML5</span>
+                    <img id="css-img"src="imagens/icones/css.png" alt="">
+                    <span id="css-text">CSS3</span>
+                    <img id="js-img"src="imagens/icones/js.png" alt="">
+                    <span id="js-text">JavaScript</span>
+                </div>
         </section>
-        <section class="grid-section">
-            <h1>Habilidades</h1>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>React</span>
+        <section class="secao" id="secao-contato">
+            <div class="topico"> CONTATO </div>
+                <h1>Contato</h1>
+                <p id="contato-inicio"class="contato-text">Entre em contato comigo.</p>
+                <div class="contato-container">
+                    <a href="https://github.com/gulinagai" class="contato-box box" target="_blank"><img src="imagens/icones/github.svg" alt=""></a>
+                    <a href="https://www.linkedin.com/in/gustavo-nagai/" class="contato-box box" target="_blank"><img src="imagens/icones/linkedin-g.png" alt=""></a>
+                    <a href="https://wa.me/5518997442590" target="_blank" class="contato-box box"><img src="imagens/icones/whatsapp.png" alt=""></a>
+                </div>
+                <p id="contato-fim"class="contato-text">Estou sempre disponível para conversar e discutir propostas, é só me mandar uma mensagem! </p>
         </section>
-        <section class="grid-section">
-            <h1>Contato</h1>
-        </section>
+        <footer>
+            <p>Todos os direitos reservados.</p>
+        </footer>
 
 
 
@@ -68,8 +102,6 @@
 
 
 
-
-    </div>
 </main>
     <script type="module" src="js/script.js"></script>
 </body>
