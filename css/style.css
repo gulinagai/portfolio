@@ -28,14 +28,37 @@ body.ativo {
     color: black;
 }
 
+<<<<<<< HEAD
 
 /* Botão light/dark-mode */
+=======
+body.ativo #menu {
+    background: #f8f8f8;
+}
+
+body.ativo #menu ul li a {
+    color: black;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr minmax(300px, 800px) 1fr;
+    grid-template-rows: 100vh 500px 500px 800px 500px 500px;
+    /* grid-template-areas: "." "center" "." ; */
+}
+
+
+>>>>>>> main
 #toggle {
     margin-left: 50px;
     position: relative;
     display: block;
     width: 100px;
+<<<<<<< HEAD
     height: 40px;
+=======
+    height: 50px;
+>>>>>>> main
     cursor: pointer;
     border-radius: 160px;
     background-color: #222;
@@ -56,8 +79,13 @@ body.ativo {
     position: absolute;
     top: 0;
     left: 0;
+<<<<<<< HEAD
     width: 40px;
     height: 40px;
+=======
+    width: 50px;
+    height: 50px;
+>>>>>>> main
     background: linear-gradient(to bottom, #444, #222);
     border-radius: 50%;
     transform: scale(0.9);
@@ -69,7 +97,11 @@ body.ativo {
 }
 
 #toggle.ativo .indicator {
+<<<<<<< HEAD
     left: 60px;
+=======
+    left: 50px;
+>>>>>>> main
     background: linear-gradient(to bottom, #eaeaea, #f9f9f9);
     box-shadow: inset 0 8px 20px rgba(0,0,0,0.1),
                 inset 0 4px 4px rgba(255,255,255,1),
@@ -86,6 +118,7 @@ body.ativo #menu {
 
 #menu {
     display: grid;
+<<<<<<< HEAD
     grid-template-columns: 30vw 70vw;
     grid-template-rows: auto;
     
@@ -94,9 +127,20 @@ body.ativo #menu {
     background-color: #0F0F0F;
     position: sticky;
     top: 0;
+=======
+    grid-template-columns: 30% 70%;
+    width: 100vw;
+    position: fixed;
+>>>>>>> main
     z-index: 1;
     padding-top: 80px;
     padding-bottom: 26px;
+<<<<<<< HEAD
+=======
+    padding-left: 150px;
+    background: #111111;
+    transition: background 0.5s;
+>>>>>>> main
 }
 
 #menu ul {
@@ -207,6 +251,7 @@ body.ativo .inicio {
     font-size: 4rem;
 }
 
+<<<<<<< HEAD
 .inicio h2 {
     font-weight: normal;
 }
@@ -803,4 +848,9 @@ section.ativo .topico {
         max-width: 50px;
         
     }
+=======
+.flex-sobre {
+    display: flex;
+    gap: 50px;
+>>>>>>> main
 }
