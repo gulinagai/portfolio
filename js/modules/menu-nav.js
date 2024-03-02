@@ -7,7 +7,6 @@ export default class MenuNav {
 
     moveToSection(event, index) {
         event.preventDefault()
-        console.log(event)
         if(index === 0) {
             this.options = { block: 'start' }
             document.body.scrollIntoView(this.options)
@@ -27,7 +26,6 @@ export default class MenuNav {
     }
     init() {
         if (this.links.length && this.sections.length) {
-            console.log(this.links, this.sections)
             this.addEventMenuNav()
         }
     }
