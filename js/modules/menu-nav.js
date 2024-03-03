@@ -2,11 +2,12 @@ export default class MenuNav {
     constructor(links, sections) {
         this.links = document.querySelectorAll(links)
         this.sections = document.querySelectorAll(sections)
+        this.events = ['click', 'touchstart']
         this.options = { block: 'center', behavior: "smooth" }
     }
 
     moveToSection(event, index) {
-        event.preventDefault()
+        event.preventDefault();
         if(index === 0) {
             this.options = { block: 'start' }
             document.body.scrollIntoView(this.options)
@@ -18,12 +19,14 @@ export default class MenuNav {
 
     addEventMenuNav() {
         this.links.forEach((link, index) =>{
-            link.addEventListener('click', () => {
-                this.moveToSection(event, index)
-            }
-            )
+            this.events.forEach((evento)=>{
+                link.addEventListener(evento, () => {
+                    this.moveToSection(event, index)
+                })   
+            })
         })
     }
+
     init() {
         if (this.links.length && this.sections.length) {
             this.addEventMenuNav()

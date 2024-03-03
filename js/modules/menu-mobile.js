@@ -5,6 +5,7 @@ export default class MenuMobile {
         this.mobileButton = document.querySelector(mobileButton)
         this.menuList = document.querySelector(menuList)
         this.LMButton = document.querySelector(LMButton)
+        this.events = ['click', 'touchstart']
         this.toggleMenuMobile = this.toggleMenuMobile.bind(this)
         this.changeLMButtonPosition = debounce(this.changeLMButtonPosition.bind(this), 15)
         this.outsideClick = this.outsideClick.bind(this)
@@ -45,8 +46,8 @@ export default class MenuMobile {
     }
 
     addEventMenuMobile() {
-        this.mobileButton.addEventListener('click', ()=> {
-            this.toggleMenuMobile(event)
+        this.events.forEach((evento)=>{
+            this.mobileButton.addEventListener(evento, this.toggleMenuMobile)
         })
         window.addEventListener('resize', this.changeLMButtonPosition)
     }
