@@ -40,7 +40,7 @@ export default class MenuMobile {
         this.liLMButton.classList.add('ativo')
         setTimeout(()=>{
             this.LMButton.style.display = 'block'
-        }, 20)
+        }, 150)
         this.liLMButton.appendChild(this.LMButton)
        } else {
         const menu = document.querySelector('#menu')
