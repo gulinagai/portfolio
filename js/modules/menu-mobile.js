@@ -7,7 +7,7 @@ export default class MenuMobile {
         this.LMButton = document.querySelector(LMButton)
         this.events = ['click', 'touchstart']
         this.toggleMenuMobile = this.toggleMenuMobile.bind(this)
-        this.changeLMButtonPosition = debounce(this.changeLMButtonPosition.bind(this), 15)
+        this.changeLMButtonPosition = debounce(this.changeLMButtonPosition.bind(this), 10)
         this.outsideClick = this.outsideClick.bind(this)
     }
 
