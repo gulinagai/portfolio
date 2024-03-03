@@ -18,7 +18,8 @@ export default class MenuMobile {
         }
     }
 
-    toggleMenuMobile() {
+    toggleMenuMobile(event) {
+        event.preventDefault();
         [this.menuList, this.mobileButton].forEach((element)=>{
             element.classList.toggle('ativo')
         })
@@ -45,7 +46,7 @@ export default class MenuMobile {
 
     addEventMenuMobile() {
         this.mobileButton.addEventListener('click', ()=> {
-            this.toggleMenuMobile()
+            this.toggleMenuMobile(event)
         })
         window.addEventListener('resize', this.changeLMButtonPosition)
     }

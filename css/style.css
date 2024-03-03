@@ -319,7 +319,7 @@ body.ativo .flex-links li a {
 }
 
 .projeto h2 {
-    white-space: nowrap
+    white-space: nowrap;
 }
 
 body.ativo .projeto {
@@ -913,6 +913,7 @@ section.ativo .topico {
         height: 70px;
         background-color: transparent;
         transition: .5s;
+        user-select: none;
     }
     body.ativo .mobile-button{
         background-color: transparent;
@@ -1117,5 +1118,127 @@ section.ativo .topico {
     }
     #contato-fim {
         font-size: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .container-inicio {
+        padding-top: 0;
+    }
+    .inicio {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        word-break: break-all;
+        gap: 80px;
+        
+    }
+
+    .quebra {
+        display: block;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    .inicio h1:nth-child(1) {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .inicio .flex-links {
+        grid-column: 1;
+        grid-row: 4;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .inicio h1 {
+        font-size: 40px;
+        
+    }
+
+    .inicio h2 {
+        font-size: 28px;
+    }
+
+    .container-sobre {
+        width: 340px;
+
+    }
+    
+    .container-sobre div img {
+        height: 240px;
+    }
+    
+    .container-sobre div:nth-child(2) {
+        width: 240px;
+    }
+
+    .projeto {
+        width: 340px;
+    }
+
+    .projeto h2 {
+        font-size: 1.3rem;
+    }
+
+    .projeto img {
+        height: 170px;
+    }
+    .contato-container {
+        gap: 50px;
+    }
+}
+
+@media (max-width: 380px) {
+    .container-sobre {
+        width: 280px;
+
+    }
+
+    .projeto {
+        width: 270px;
+    }
+
+    .projeto p {
+        width: 80%;
+    }
+
+    .projeto h2 {
+        font-size: 1rem;
+    }
+    
+    .projeto ul li a {
+        width: 90px;
+        height: 45px;
+        font-size: 0.8rem;
+    }
+
+    .projeto img {
+        height: 130px;
+    }
+
+    #secao-icones .topico {
+        left: -15%;
+    }
+
+    #secao-contato .topico {
+        font-size: 4rem;
+    }
+
+    .contato-container {
+        gap: 30px;
+    }
+}
+
+@media (max-height: 670px) {
+    #menu {
+        padding: 0;
+    }
+
+    .inicio {
+        padding-top: 100px;
+        gap: 50px;
     }
 }
