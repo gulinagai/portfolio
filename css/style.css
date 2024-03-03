@@ -1233,7 +1233,7 @@ section.ativo .topico {
     }
 }
 
-@media (max-height: 670px) {
+@media (max-height: 760px) and (max-width: 450px) {
     #menu {
         padding: 0;
     }
@@ -1241,5 +1241,11 @@ section.ativo .topico {
     .inicio {
         padding-top: 100px;
         gap: 50px;
+    }
+}
+
+@media (max-height: 665px) and (min-width: 450px) {
+    .container-inicio {
+        padding-top: 0;
     }
 }
