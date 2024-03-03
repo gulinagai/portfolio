@@ -7,7 +7,7 @@ export default class MenuMobile {
         this.LMButton = document.querySelector(LMButton)
         this.events = ['click', 'touchstart']
         this.toggleMenuMobile = this.toggleMenuMobile.bind(this)
-        this.changeLMButtonPosition = debounce(this.changeLMButtonPosition.bind(this), 10)
+        this.changeLMButtonPosition = debounce(this.changeLMButtonPosition.bind(this), 15)
         this.outsideClick = this.outsideClick.bind(this)
     }
 
@@ -38,6 +38,9 @@ export default class MenuMobile {
         }
         this.menuList.appendChild(this.liLMButton)
         this.liLMButton.classList.add('ativo')
+        setTimeout(()=>{
+            this.LMButton.style.display = 'block'
+        }, 20)
         this.liLMButton.appendChild(this.LMButton)
        } else {
         const menu = document.querySelector('#menu')

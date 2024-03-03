@@ -955,6 +955,7 @@ section.ativo .topico {
     }
 
     #toggle {
+        display: none;
         width: 80px;
         height: 32px;
         background-color: #00669d;
