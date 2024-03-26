@@ -419,7 +419,7 @@ body.ativo .projeto ul li a {
     font-size: 1.2rem;
     text-align: center;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     grid-template-rows: auto auto;
     gap: 20px;
     justify-items: center;
@@ -468,6 +468,16 @@ body.ativo .projeto ul li a {
 .icones #js-text {
     grid-column: 3 / span 1;
     grid-row: 2 / span 1;
+}
+
+.icones #react-img {
+    grid-column: 4 / span 1;
+    grid-row: 1 / span 1;
+}
+
+.icones #react-text {
+    grid-column: 4 / span 1;
+    grid-row: 2 / span / 1;
 }
 
 #secao-contato {
@@ -733,7 +743,7 @@ section.ativo .topico {
     }
     .icones {
         grid-template-columns: auto;
-        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto auto auto;
         max-width: 27vw;
     }
 
@@ -766,6 +776,15 @@ section.ativo .topico {
     .icones #js-text {
         grid-column: 1;
         grid-row: 6;
+    }
+    .icones #react-img {
+        grid-column: 1;
+        grid-row: 7;
+    }
+    
+    .icones #react-text {
+        grid-column: 1;
+        grid-row: 8;
     }
 }
 @media (max-width: 930px) {
