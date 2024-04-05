@@ -1058,6 +1058,9 @@ section.ativo .topico {
     #secao-sobre .topico {
         left: 16vw;
     }
+    .icones {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 670px) {
