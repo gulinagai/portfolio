@@ -616,9 +616,6 @@ section.ativo .topico {
         min-width: 80px;
         height: 40px;
     }
-    #secao-projeto {
-        height: 850px;
-    }
 }
 
 @media (max-width: 1330px) {
@@ -695,10 +692,6 @@ section.ativo .topico {
         text-orientation: upright;
         line-height: 0;
         letter-spacing: -50px; 
-    }
-
-    #secao-projeto {
-        height: 1500px;
     }
     
     #projeto-esq-container {
