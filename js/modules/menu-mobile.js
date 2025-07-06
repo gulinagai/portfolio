@@ -32,8 +32,9 @@ export default class MenuMobile {
     }
 
     changeLMButtonPosition() {
+        console.log(this.menuList.childElementCount)
        if (window.innerWidth <= 900) {
-        if (this.menuList.childElementCount === 5){
+        if (this.menuList.childElementCount === 6){
             this.liLMButton = document.createElement('li')
         }
         this.menuList.appendChild(this.liLMButton)
