@@ -7,25 +7,29 @@
     <title>Portfólio Profissional</title>
 </head>
 <body>
+    <!-- Esta é a estrutura geral do meu portfólio: -->
     <main>
-        <button class="mobile-button"></button>
+        <button class="mobile-button"></button>  <!-- botão que será mostrado na versão mobile, mais conhecido como menu hambúrguer -->
         <nav id="menu">
-            <div id="toggle">
+            <div id="toggle">    <!-- Esta div é responsável pelo uso de um botão que permite a alteração da cor do site entre branco e preto (light mode/dark mode) -->
                 <button class="indicator"></button>
                 <img id="sol" src="imagens/brilho-do-sol.png" alt="">
                 <img id="lua" src="imagens/lua-crescente.png" alt="">
             </div>
+            <!-- MENU do meu portfólio: -->
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre mim</a></li>
+                <li><a href="#">Home</a></li> <!-- A navegação foi praticamente feita via Javascript. Foi explicado de forma mais detalhada no arquivo .js  -->
+                <li><a href="#">Sobre mim</a></li>   <!-- Os links levam a seções específicas que se encontram todos na mesma página. -->
                 <li><a href="#">Formação</a></li>
-                <li><a href="#">Projetos</a></li>
+                <li><a href="#">Portfólio</a></li>
                 <li><a href="#">Tecnologias</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
         </nav>
-        <section class="container-inicio">
-            <div class="inicio">
+        <!-- Separei o conteúdo do portfólio por seções para melhor entendimento.  -->
+        <!-- Durante todo o desenvolvimento do portfólio, eu utilizei principalmente classes e id's para me referir a estes elementos posteriormente no css. -->
+        <section class="container-inicio">   <!-- Seção de apresentação. -->
+            <div class="inicio">   <!-- Esta div permite a organização por grid layout dos seus elementos "filhos". Foi utilizado grid em diversas partes do projeto. -->
                 <h1>Seja <span class="bold">Bem-vindo</span> <span class="quebra">ao meu portfólio.</span></h1>
                 <h2>Eu sou <strong>Gustavo Nagai</strong>,</h2>
                 <h1>Desenvolvedor <span class="quebra"><span class="bold">Web</span></span></h1>
@@ -35,8 +39,8 @@
                 </ul>
             </div>
         </section>
-        <section class="secao" id="secao-sobre">
-            <div class="topico"> SOBRE </div>
+        <section class="secao" id="secao-sobre">    <!-- Seção "Sobre mim". -->
+            <div class="topico"> SOBRE </div>    <!-- Estas div's são responsáveis por dar este efeito de escrita ao fundo da seção. -->
                 <div class="container-sobre box">
                     <div><img src="imagens/fotoportfolio.jpg" alt=""></div>
                     <div>
@@ -48,20 +52,18 @@
                     </div>
                 </div>
         </section>
-        <section class="secao" id="secao-formacao">
+        <section class="secao" id="secao-formacao">    <!-- Seção "Formação". -->
             <div class="topico"> FORMAÇÃO </div>
                     <ul>
                         <li>
                             <p><strong>Análise e Desenvolvimento de Sistemas - UNINTER</strong></p>
                             <p>06/2024 - 12/2026 
-                                (Em Andamento)
-                            </p>
+                                (Em Andamento)</p>
                         </li>
                     </ul>
         </section>
-        <section class="secao" id="secao-projeto">
-            <div class="topico"> PROJETOS </div>
-                <h1>Projetos</h1>
+        <section class="secao" id="secao-projeto">    <!-- Seção "Portfólio" onde se encontram meus projetos pessoais. -->
+            <div class="topico"> PORTFÓLIO </div>
                         <div class="projeto box">
                             <img src="imagens/projetos/projeto-1.png" alt="">
                             <h2>Projeto Black Clover</h2>
@@ -90,14 +92,12 @@
                         Tecnologias: <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> e <strong>React.js</strong>.
                             </p>
                         <ul>
-                            <!-- <li><a href="" target="_blank">Deploy</a></li> -->
                             <li><a href="https://github.com/gulinagai/projeto-dogs" target="_blank">Repositório</a></li>
                         </ul>
                     </div>
         </section>
-        <section class="secao" id="secao-icones">
+        <section class="secao" id="secao-icones">    <!-- Seção "Icones", mostrando as tecnologias que possuo conhecimento.-->
             <div class="topico"> TECNOLOGIAS </div>
-                <h1>Tecnologias</h1>
                 <div class="icones box">
                     <img id="html-img"src="imagens/icones/html.png" alt="">
                     <span id="html-text">HTML5</span>
@@ -109,9 +109,8 @@
                     <span id="react-text">React.js</span>
                 </div>
         </section>
-        <section class="secao" id="secao-contato">
+        <section class="secao" id="secao-contato">    <!-- Seção "Contato". -->
             <div class="topico"> CONTATO </div>
-                <h1>Contato</h1>
                 <p id="contato-inicio"class="contato-text">Entre em contato comigo.</p>
                 <div class="contato-container">
                     <a href="https://github.com/gulinagai" class="contato-box box" target="_blank"><img src="imagens/icones/github.svg" alt=""></a>
@@ -120,7 +119,7 @@
                 </div>
                 <p id="contato-fim"class="contato-text">Estou sempre disponível para conversar e discutir propostas, é só me mandar uma mensagem! </p>
         </section>
-        <footer>
+        <footer>    <!-- Footer ou Rodapé, utilizado para reservar os devidos direitos. -->
             <p>Todos os direitos reservados.</p>
         </footer>
 

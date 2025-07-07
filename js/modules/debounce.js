@@ -8,3 +8,6 @@ export default function debounce(callback, delay) {
     }, delay);
   }
 }
+
+// Esse código implementa uma função chamada debounce, cujo objetivo é controlar a frequência com que uma função (callback) é executada.
+// Certos eventos realizam uma quantidade excessiva de execuções de funções, como scroll, resize, etc.
